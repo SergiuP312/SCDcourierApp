@@ -13,7 +13,8 @@ public class Courier {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @Column(insertable = false, updatable = false)
+    private Integer courier_id;
 
     private String name;
 
